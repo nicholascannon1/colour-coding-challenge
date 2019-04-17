@@ -1,4 +1,4 @@
-# colour-coding-challenge
+# Colour Coding Challenge
 Colour Coding Challenge: Produce image with each pixel being a unique RGB value
 
 ## Glitch Algorithm
