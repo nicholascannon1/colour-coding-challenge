@@ -13,7 +13,7 @@ pixel linearly.
 This algorithm runs horizontally through each pixel generating a new random RGB value for that pixel. Each RGB value
 generated is stored in a set. The set is checked after each generation of a new RGB value to avoid duplicate colours.
 
-## Noise neighbours algorithm
+## Noise Neighbours Algorithm
 Starts by generating an image with each pixel assigned an unique random RGB value (exactly like the noise algorithm).
 The algorithm then selects two random pixels and calculates if swapping those two pixels increases the similarity of 
 that pixels colour to the neighbouring pixels colours. If this swap increases the similarity then it swaps them otherwise
