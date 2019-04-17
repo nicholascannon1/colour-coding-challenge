@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Colour Challenge</title>
+</head>
+<body>
+  <div id="content">
+    <div>
+      <h1>Colour Coding Challenge</h1>
+      <button id="animateBtn">Animate!</button>
+    </div>
+    <!-- Glitch Image -->
+    <div>
+      <p class="imgHeading">Glitch</p>
+      <canvas id="glitchImage" width="256" height="128"></canvas>
+      <button id="glitchRefresh">Refresh</button>
+    </div>
+    <!-- Noise Image -->
+    <div>
+      <p class="imgHeading">Noise</p>
+      <canvas id="noiseImage" width="256" height="128"></canvas>
+      <button id="noiseRefresh">Refresh</button>
+    </div>
+    <!-- Linear Image -->
+    <div>
+      <p class="imgHeading">Linear</p>
+      <canvas id="linearImage" width="256" height="128"></canvas>
+      <select name="rgbFlip" id="linearSelect">
+        <option value="0" selected>RGB</option>
+        <option value="1">BRG</option>
+        <option value="2">GBR</option>
+      </select>
+    </div>
+    <!-- Noise Neighbours Image -->
+    <div>
+      <p class="imgHeading">Group Random Neighbours</p>
+      <canvas id="grnImage" width="256" height="128"></canvas>
+      <button id="render">Render Image</button>
+    </div>
+    <div><p class="imgHeading">Nicholas Cannon</p></div>
+  </div>
+
+  <script src="./js/algorithms/noiseRGB.js"></script>
+  <script src="./js/algorithms/linearRGB.js"></script>
+  <script src="./js/algorithms/glitchRGB.js"></script>
+  <script src="./js/algorithms/noiseNeighbours.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
